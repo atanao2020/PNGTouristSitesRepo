@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Tousists Site Visits In PNG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+<script src="./index.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<style>
+      body{
+          background-color: lightgrey;
+          text-align:center;
+      }
+      label{
+          font-weight: bold;
+          display: block;
+          width: 120px;
+          float: left;
+      }
+      form{
+          background-color: darkcyan;
+          width:500px;
+          text-align:center;
+          border:solid;
+          margin:auto;
+          padding:10px;
+          display:table;
+      }
+      div{
+          background-color: lightskyblue;
+          width:800px;
+          border:solid;
+          margin:auto;
+      }
+</style>
+</head>
+<body>
+      <h1> Add Tourist Site Visit </h1>
+      <form id="new-site-form"  method="POST">
+          <label for="province">Province</label>
+          <input type="text" id="province" name="province" required><br><br>
+          <label for="city">Place</label>
+          <input type="text" id="city" name="city" required><br><br>
+          <label for="place">Toursit Site</label>
+          <input type="text" id="place" name="place" required><br><br>
+          <label for="image">Image</label>
+          <input type="url" id="image" name="image" required><br><br>
+          <button type="submit"> Submit </button>
+      </form><br><br>
+      
+      <h1> List of Tourist Sites in PNG </h1>
+      <div id = tourist-sites></div>
+</body>
+</html>
